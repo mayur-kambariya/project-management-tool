@@ -1,0 +1,11 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to 'Project Management Tool', root_path, class: "navbar-brand" %>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"> <%= link_to "Projects", projects_path %></li>
+      <li><%= link_to 'Signout', destroy_user_session_path %> </li>
+    </ul>
+  </div>
+</nav>

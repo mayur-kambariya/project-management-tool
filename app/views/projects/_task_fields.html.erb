@@ -1,0 +1,21 @@
+<div class="nested-fields panel panel-default">
+  <div class="panel-body">
+    <div class="form-group">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :description %>
+      <%= f.text_area :description, class: 'form-control' %>
+    </div>
+    <div class="form-check">
+      <%= f.label :status, "Done", class: 'form-check-label', for: 'status_cb' %>
+      <%= f.check_box :status, class: 'form-check-input', id: 'status_cb' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :deadline %>
+      <%= f.text_field :deadline, class: 'form-control datepicker'%>
+    </div>
+    <%= link_to_remove_association "Remove", f, class: 'btn btn-sm btn-danger' %>
+    </div>
+</div>

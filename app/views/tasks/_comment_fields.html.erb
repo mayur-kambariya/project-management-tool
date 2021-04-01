@@ -1,0 +1,13 @@
+<div class="nested-fields panel panel-default">
+  <div class="panel-body">
+    <div class="form-group">
+      <% if f.object.description.present? %>
+        <%= f.object.description%>
+        <h4>Comment added on </h4> <%= f.object.created_at%>
+      <% else %>
+        <%= f.label :description %>
+        <%= f.text_area :description, class: 'form-control' %>
+      <% end %>
+    </div>
+  </div>
+</div>
